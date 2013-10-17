@@ -1,35 +1,3 @@
-#pragma once
-
-#include <mysql.h>
-#include <string>
-
-using namespace std;
-using std::string;
-
-
-class CCustomMysql
-{
-private:
-	MYSQL m_mysql;
-    string m_dbname;
-	string m_serverip;
-	string m_username;
-	string m_password;
-	
-
-public:
-	CCustomMysql(void);
-	~CCustomMysql(void);
-
-	bool InitMYSQL();
-
-	//连接到服务器；
-	bool ConnecttoMysqlServer( char* serverIP,int port,char * username,char * password,char* databasename );
-
-};
-
-/*
-
 #ifndef GLOBAL_H
 #define GLOBAL_H
 
@@ -70,5 +38,3 @@ struct Database_Param    //数据库参数
 };
 
 #endif
-
-*/

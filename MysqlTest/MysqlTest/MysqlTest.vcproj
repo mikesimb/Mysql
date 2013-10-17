@@ -45,7 +45,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;C:\Program Files\MySQL\MySQL Server 5.6\include&quot;"
+				AdditionalIncludeDirectories="F:\PhoneGame\MySQL\include"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -69,7 +69,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="&quot;C:\Program Files\MySQL\MySQL Server 5.6\lib&quot;"
+				AdditionalLibraryDirectories="F:\PhoneGame\MySQL\lib"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				TargetMachine="1"
@@ -188,10 +188,6 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\CustomMysql.cpp"
-				>
-			</File>
-			<File
 				RelativePath=".\MysqlTest.cpp"
 				>
 			</File>
@@ -219,16 +215,16 @@
 					/>
 				</FileConfiguration>
 			</File>
+			<File
+				RelativePath=".\z_Mysql.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
-			<File
-				RelativePath=".\CustomMysql.h"
-				>
-			</File>
 			<File
 				RelativePath=".\MysqlTest.h"
 				>
@@ -249,6 +245,14 @@
 				RelativePath=".\targetver.h"
 				>
 			</File>
+			<File
+				RelativePath=".\z_Mysql.h"
+				>
+			</File>
+			<File
+				RelativePath=".\z_mysqlglobal.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
@@ -265,6 +269,18 @@
 			</File>
 			<File
 				RelativePath=".\res\MysqlTest.rc2"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Mysql"
+			>
+			<File
+				RelativePath=".\CustomMysql.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\CustomMysql.h"
 				>
 			</File>
 		</Filter>
