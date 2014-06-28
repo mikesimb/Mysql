@@ -18,6 +18,9 @@
 #include <sstream>
 
 
+#pragma comment(lib, "libmysql")  
+
+
 class CMysql
 {
 public:

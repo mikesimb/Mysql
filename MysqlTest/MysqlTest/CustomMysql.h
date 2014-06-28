@@ -7,6 +7,7 @@ using namespace std;
 using std::string;
 
 
+
 class CCustomMysql
 {
 private:

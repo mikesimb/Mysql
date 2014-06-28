@@ -11,8 +11,6 @@
 #endif
 
 
-#pragma comment(lib,"libmysql.lib")
-
 // CAboutDlg dialog used for App About
 
 class CAboutDlg : public CDialog
@@ -156,10 +154,9 @@ HCURSOR CMysqlTestDlg::OnQueryDragIcon()
 void CMysqlTestDlg::OnBnClickedButton1()
 {
 	// TODO: Add your control notification handler code here
-/*	MYSQL mysql;
+	MYSQL mysql;
 	mysql_init(&mysql);
 
-	 ASSERT();
      ASSERT(mysql_query(&mysql, "SELECT * FROM maxTest") == 0);
      MYSQL_RES *result;
      result = mysql_store_result(&mysql);
@@ -178,23 +175,23 @@ void CMysqlTestDlg::OnBnClickedButton1()
      mysql_free_result(result);
      mysql_close(&mysql);
 
-	*/
+	
 
-	CCustomMysql * m_mysql = new CCustomMysql;
-	if (m_mysql->InitMYSQL())
-	{
-		OutputDebugStringA("init Mysql Success!");
-		bool connect = m_mysql->ConnecttoMysqlServer("127.0.0.1",3306,"root","zzw780517..","test");
-		if (connect)
-		{
-			OutputDebugStringA("connect success");
-		}
-		else
-			OutputDebugStringA("connect Failed");
-	}
-	else
-	{
-		OutputDebugStringA("init Mysql Failed!");
-	}
+//	CCustomMysql * m_mysql = new CCustomMysql;
+//	if (m_mysql->InitMYSQL())/
+//	{
+//		OutputDebugStringA("init Mysql Success!");
+//		bool connect = m_mysql->ConnecttoMysqlServer("127.0.0.1",3306,"root","zzw780517..","test");
+//		if (connect)
+//		{
+//			OutputDebugStringA("connect success");
+//		}
+//		else
+//			OutputDebugStringA("connect Failed");
+//	}
+//	else
+//	{
+//		OutputDebugStringA("init Mysql Failed!");
+//	}
 
 }
